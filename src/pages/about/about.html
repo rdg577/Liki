@@ -7,5 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-card *ngFor="let photo of Photos">
+    <ion-card-header>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{ photo.thumbnailUrl }}">
+        </ion-avatar>
+      </ion-item>
+      {{ photo.title }}
+    </ion-card-header>
+  </ion-card>
 </ion-content>
